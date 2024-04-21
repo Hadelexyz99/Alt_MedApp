@@ -44,7 +44,7 @@ def update_patient(patient_id: int, payload: PatientCreate):
 
 @patient_router.delete('/{patient_id}', status_code=200)
 def delete_patient(patient_id: int):
-    patients
+    global patients
     initial_length = len(patients)
     patients = [patient for patient in patients if patient.id != patient_id]
     
