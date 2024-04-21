@@ -3,7 +3,6 @@ from routers.doctor_router import doctor_router
 from routers.patient_router import patient_router
 from routers.appointment_router import appointment_router
 
-# Create an instance of the FastAPI class
 app = FastAPI()
 
 @app.get("/")
